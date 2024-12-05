@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamiento</title>
+
+    <style>
+
+        *{
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        article{
+            border: 1px solid red;
+            margin-bottom: 100px;
+        }
+
+        div{
+            width: 220px;
+            height: 200px;
+            margin: 10px;
+            border: 1px solid blue;
+            line-height: 200px;
+            text-align: center;
+        }
+
+        .bloque div{
+            display: block;
+        }
+
+        .linea div{
+            display: inline;
+        }
+
+        .lineablo div{
+            display: inline-block;
+        }
+
+        .tabla div{
+            display: table-cell;
+        }
+
+        #abso {
+            position: relative;
+            left: 300px;
+            top: 30px;
+        }
+
+        #rela{
+            position: absolute;
+            right: 50px;
+        }
+
+        #fijo{
+            position: fixed;
+            background-color: blue;
+            right: 100px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <h1>Linea</h1>
+    <article class="bloque">
+        <div>Uno</div>
+        <div>Dos</div>
+        <div>Tres</div>
+        <div>Cuatro</div>
+    </article>
+
+    <h1>Linea</h1>
+    <article class="linea">
+        <div>Uno</div>
+        <div>Dos</div>
+        <div>Tres</div>
+        <div>Cuatro</div>
+    </article>
+
+    <h1>linea en bloque</h1>
+    <article class="lineablo">
+        <div>Uno</div>
+        <div>Dos</div>
+        <div>Tres</div>
+        <div>Cuatro</div>
+    </article>
+
+    <h1>tabla</h1>
+    <article class="tabla">
+        <div>Uno</div>
+        <div>Dos</div>
+        <div>Tres</div>
+        <div>Cuatro</div>
+    </article>
+
+    <h1>Posicion</h1>
+    <article>
+        <div id="abso">Uno</div>
+        <div id="rela">Dos</div>
+        <div id="fijo">Tres</div>
+    </article>
+
+    
+
+    
+</body>
+</html>
